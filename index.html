@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>РобоФакторі — розробка роботизованих систем</title>
+  <meta name="description" content="Проєктування, виробництво та впровадження промислових, сервісних і навчальних роботизованих систем." />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-top">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.png" alt="Robot Factory" />
+        <span>ROBOT <span class="logo__accent">FACTORY</span></span>
+      </a>
+
+      <div class="header-actions">
+        <a class="cart-status" href="shop.html">0 ТОВАРІВ</a>
+        <form class="search-form" action="shop.html" method="get">
+          <label class="sr-only" for="header-search">Пошук продукції</label>
+          <input class="search-form__input" id="header-search" type="search" name="q" placeholder="Пошук..." />
+          <button class="search-form__btn" type="submit">Пошук</button>
+        </form>
+      </div>
+    </div>
+
+    <nav class="nav-bar" aria-label="Головна навігація">
+      <div class="container nav-bar__inner">
+        <button class="burger-btn" id="burger-btn" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav-list">
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+        </button>
+
+        <ul class="nav-list" id="nav-list">
+          <li><a class="nav-list__link nav-list__link--active" href="index.html">Головна</a></li>
+          <li><a class="nav-list__link" href="about.html">Про нас</a></li>
+          <li><a class="nav-list__link" href="shop.html">Магазин</a></li>
+          <li><a class="nav-list__link" href="#history">Історія</a></li>
+          <li><a class="nav-list__link" href="#contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Головний банер">
+      <div class="hero__banner">
+        <div class="container hero__content">
+          <div class="hero__box">
+            <p class="hero__subtitle-top">Ощаджуйте час та знижуйте</p>
+            <p class="hero__subtitle-sub">витрати на автоматизацію з</p>
+            <h1 class="hero__title">Robot Factory</h1>
+          </div>
+        </div>
+      </div>
+      <div class="hero__strip"></div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title">Ласкаво просимо до <strong>Robot Factory</strong></h2>
+          <a class="btn-yellow" href="shop.html">Переглянути продукцію</a>
+        </div>
+
+        <div class="categories-grid">
+          <a class="category-card" href="shop.html?q=space">
+            <img class="category-card__img" src="images/product.png" alt="Автономний робот для складних умов експлуатації" />
+            <h3 class="category-card__label">Космічні та спецроботи</h3>
+          </a>
+
+          <a class="category-card" href="shop.html?q=sports">
+            <img class="category-card__img" src="images/product-1.png" alt="Мобільний робот для тренувань і тестування" />
+            <h3 class="category-card__label">Спортивні та тестові</h3>
+          </a>
+
+          <a class="category-card" href="shop.html?q=edu">
+            <img class="category-card__img" src="images/product-2.png" alt="Навчальний робототехнічний комплект для дітей і шкіл" />
+            <h3 class="category-card__label">Навчальні та дитячі</h3>
+          </a>
+        </div>
+
+        <div class="awards-bar">
+          <div class="awards-bar__badge">Чому ми найкращі</div>
+          <p class="awards-bar__subtitle">Інженерна точність та серійне виробництво з 1998 року</p>
+        </div>
+
+        <div class="three-cols">
+          <div class="three-cols__col">
+            <p>Ми проєктуємо роботизовані модулі з урахуванням реальних умов цеху, складу чи лабораторії. Кожен вузол проходить стендові випробування на стабільність роботи під навантаженням і точність позиціонування.</p>
+          </div>
+          <div class="three-cols__col">
+            <p>Наші рішення поєднують надійну механіку, сучасні приводи та гнучке програмне керування. Це дозволяє швидко інтегрувати обладнання в наявні процеси без зупинки ключових операцій підприємства.</p>
+          </div>
+          <div class="three-cols__col">
+            <p>Повний цикл супроводу включає підбір конфігурації, пусконалагодження, навчання персоналу та сервісну підтримку. Замовники отримують прогнозовану окупність і зрозумілу технічну документацію.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--dark" id="history">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__kicker">З 1990 року</p>
+          <h2 class="section-header__title">Наша історія</h2>
+        </div>
+
+        <p class="history-desc">Починаючи з невеликого конструкторського бюро в дев'яностих, команда пройшла шлях від експериментальних маніпуляторів до розробки комплексних робототехнічних систем для промисловості, освіти та сервісних завдань.</p>
+
+        <div class="history-showcase">
+          <img class="history-showcase__img" src="images/history.png" alt="Історія розвитку та виробничі етапи Robot Factory" />
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" aria-label="Партнери">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__kicker">Наші партнери</p>
+          <h2 class="partners-title">Партнери</h2>
+        </div>
+
+        <div class="partners-grid">
+          <div class="partner-card">
+            <img class="partner-card__img" src="images/partner.png" alt="Логотип партнера Three.org" />
+          </div>
+          <div class="partner-card">
+            <img class="partner-card__img" src="images/partner-1.png" alt="Логотип партнера Qube" />
+          </div>
+          <div class="partner-card">
+            <img class="partner-card__img" src="images/partner-2.png" alt="Логотип партнера Farnico" />
+          </div>
+          <div class="partner-card">
+            <img class="partner-card__img" src="images/partner-3.png" alt="Логотип партнера Army" />
+          </div>
+        </div>
+
+        <div class="dots" aria-hidden="true">
+          <span class="dots__item dots__item--active"></span>
+          <span class="dots__item"></span>
+          <span class="dots__item"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-col__title">Популярні рішення</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html">Спеціальні роботи</a></li>
+            <li><a href="shop.html">Модульні комплекти</a></li>
+            <li><a href="shop.html">Навчальні моделі</a></li>
+            <li><a href="shop.html">Промислові системи</a></li>
+            <li><a href="shop.html">Спортивні платформи</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Корисні посилання</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li><a href="about.html">Про компанію</a></li>
+            <li><a href="shop.html">Каталог продукції</a></li>
+            <li><a href="about.html#team">Команда інженерів</a></li>
+            <li><a href="#top" data-open-modal="contact">Замовити консультацію</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Напрями розробки</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html">Освітня робототехніка</a></li>
+            <li><a href="shop.html">Складська логістика</a></li>
+            <li><a href="shop.html">Важкі маніпулятори</a></li>
+            <li><a href="shop.html">Індустріальні лінії</a></li>
+            <li><a href="shop.html">Тестові платформи</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Наші сервіси</h3>
+          <div class="footer-services-grid">
+            <img src="images/widget.png" alt="Індустріальний об'єкт" />
+            <img src="images/widget-1.png" alt="Робототехнічний модуль" />
+            <img src="images/widget-2.png" alt="Дрон та сенсорні системи" />
+            <img src="images/widget-3.png" alt="Освітній комплект" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© Robot Factory — Курсовий проєкт</div>
+    </div>
+  </footer>
+
+  <!-- Модальне вікно з формою -->
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-window">
+      <button class="modal-window__close" id="modal-close" type="button" aria-label="Закрити вікно">&times;</button>
+      <h2 class="modal-window__title" id="modal-title">Зв'язатися з нами</h2>
+      <form id="contact-modal-form" novalidate>
+        <div class="form-field">
+          <label for="modal-name">Ім'я</label>
+          <input id="modal-name" name="name" type="text" required />
+          <span class="form-error" id="error-name"></span>
+        </div>
+        <div class="form-field">
+          <label for="modal-email">Email</label>
+          <input id="modal-email" name="email" type="email" required />
+          <span class="form-error" id="error-email"></span>
+        </div>
+        <div class="form-field">
+          <label for="modal-message">Повідомлення</label>
+          <textarea id="modal-message" name="message" rows="4" required></textarea>
+          <span class="form-error" id="error-message"></span>
+        </div>
+        <button class="btn-yellow" type="submit">Надіслати</button>
+        <p class="form-status" id="modal-status"></p>
+      </form>
+    </div>
+  </div>
+
+  <button class="scroll-top-btn" id="scroll-top-btn" type="button" aria-label="Прокрутити вгору">&uarr;</button>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

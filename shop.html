@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Магазин — РобоФакторі</title>
+  <meta name="description" content="Каталог промислових, космічних, спортивних та навчальних роботизованих систем від РобоФакторі." />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-shop">
+  <header class="site-header" id="top">
+    <div class="container header-top">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.png" alt="Robot Factory" />
+        <span>ROBOT <span class="logo__accent">FACTORY</span></span>
+      </a>
+
+      <div class="header-actions">
+        <a href="#cart-summary" class="cart-status" id="cartStatus" aria-label="Товари в кошику">
+          <span class="cart-status__count" id="cartCount">0</span>
+          <span class="cart-status__label">ТОВАРІВ</span>
+        </a>
+
+        <form class="search-form" id="shopSearchForm" role="search" aria-label="Пошук товарів">
+          <label for="shopSearchInput" class="visually-hidden">Пошук товарів</label>
+          <input type="search" id="shopSearchInput" class="search-form__input" placeholder="Пошук..." autocomplete="off" />
+          <button type="submit" class="search-form__btn">Пошук</button>
+        </form>
+      </div>
+    </div>
+
+    <nav class="nav-bar" aria-label="Головна навігація">
+      <div class="container nav-bar__inner">
+        <button type="button" class="burger-btn" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Відкрити або закрити меню">
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+        </button>
+
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html" class="nav-list__link">Головна</a></li>
+          <li><a href="about.html" class="nav-list__link">Про нас</a></li>
+          <li><a href="shop.html" class="nav-list__link nav-list__link--active is-active" aria-current="page">Магазин</a></li>
+          <li><a href="index.html#history" class="nav-list__link">Історія</a></li>
+          <li><a href="#contacts" class="nav-list__link">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="page-hero" aria-labelledby="shopPageTitle">
+      <div class="page-hero__overlay">
+        <div class="container page-hero__content">
+          <h1 id="shopPageTitle" class="visually-hidden">Магазин</h1>
+          <nav aria-label="Хлібні крихти">
+            <ol class="breadcrumb">
+              <li class="breadcrumb__item"><a href="index.html">Головна</a></li>
+              <li class="breadcrumb__separator" aria-hidden="true">/</li>
+              <li class="breadcrumb__item is-current" aria-current="page">Магазин</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="page-hero__strip" aria-hidden="true"></div>
+    </section>
+  </header>
+
+  <main class="shop-main">
+    <section class="catalog-section" aria-labelledby="catalogHeading">
+      <div class="container catalog-section__box">
+        <header class="section-heading">
+          <p class="section-heading__eyebrow">Наш каталог</p>
+          <h2 id="catalogHeading" class="section-heading__title">Товари</h2>
+        </header>
+
+        <div class="catalog-meta" id="cart-summary">
+          <p class="catalog-meta__info" id="catalogStatusText">Сторінка 1 з 3</p>
+          <button type="button" class="btn-reset" id="resetFiltersBtn">Скинути фільтр</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid" role="list">
+          <!-- Сторінка 1 -->
+          <article class="product-card" data-page="1" data-title="промисловий робот серії А #00SS5 industry robot" role="listitem">
+            <div class="product-card__media">
+              <span class="product-card__badge" aria-hidden="true"></span>
+              <img src="images/shop.png" alt="Промисловий робот серії А, модель #00SS5" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Промисловий робот</h3>
+                <p class="product-card__code">Модель: #00SS5</p>
+              </div>
+              <div class="product-card__meta">
+                <span class="product-card__price">$ 747</span>
+                <div class="product-card__rating" aria-label="Рейтинг: 4.5 з 5">
+                  <span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-half">★</span>
+                </div>
+                <button type="button" class="product-card__add" data-add-to-cart="Промисловий робот (#00SS5)">У кошик</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-page="1" data-title="сервісний робот-помічник #00SS6 industry robot" role="listitem">
+            <div class="product-card__media">
+              <span class="product-card__badge" aria-hidden="true"></span>
+              <img src="images/shop-1.png" alt="Сервісний робот-помічник, модель #00SS6" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Сервісний робот</h3>
+                <p class="product-card__code">Модель: #00SS6</p>
+              </div>
+              <div class="product-card__meta">
+                <span class="product-card__price">$ 747</span>
+                <div class="product-card__rating" aria-label="Рейтинг: 4.5 з 5">
+                  <span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-half">★</span>
+                </div>
+                <button type="button" class="product-card__add" data-add-to-cart="Сервісний робот (#00SS6)">У кошик</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-page="1" data-title="робот-навантажувач #00SS7 індустріальний" role="listitem">
+            <div class="product-card__media">
+              <span class="product-card__badge" aria-hidden="true"></span>
+              <img src="images/shop-2.png" alt="Робот-навантажувач, модель #00SS7" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Робот-навантажувач</h3>
+                <p class="product-card__code">Модель: #00SS7</p>
+              </div>
+              <div class="product-card__meta">
+                <span class="product-card__price">$ 747</span>
+                <div class="product-card__rating" aria-label="Рейтинг: 4.5 з 5">
+                  <span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-half">★</span>
+                </div>
+                <button type="button" class="product-card__add" data-add-to-cart="Робот-навантажувач (#00SS7)">У кошик</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-page="1" data-title="модульний робот-конструктор #00SS8" role="listitem">
+            <div class="product-card__media">
+              <span class="product-card__badge" aria-hidden="true"></span>
+              <img src="images/shop-3.png" alt="Модульний робот-конструктор, модель #00SS8" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Модульний робот</h3>
+                <p class="product-card__code">Модель: #00SS8</p>
+              </div>
+              <div class="product-card__meta">
+                <span class="product-card__price">$ 747</span>
+                <div class="product-card__rating" aria-label="Рейтинг: 4.5 з 5">
+                  <span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-half">★</span>
+                </div>
+                <button type="button" class="product-card__add" data-add-to-cart="Модульний робот (#00SS8)">У кошик</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Сторінка 2 -->
+          <article class="product-card is-hidden" data-page="2" data-title="космічний спецробот #01SP2 space" role="listitem">
+            <div class="product-card__media">
+              <span class="product-card__badge" aria-hidden="true"></span>
+              <img src="images/product.png" alt="Космічний спецробот, модель #01SP2" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Космічний спецробот</h3>
+                <p class="product-card__code">Модель: #01SP2</p>
+              </div>
+              <div class="product-card__meta">
+                <span class="product-card__price">$ 890</span>
+                <div class="product-card__rating" aria-label="Рейтинг: 5 з 5">
+                  <span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span>
+                </div>
+                <button type="button" class="product-card__add" data-add-to-cart="Космічний спецробот (#01SP2)">У кошик</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card is-hidden" data-page="2" data-title="конструктор для робототехніки #02LG9 lego" role="listitem">
+            <div class="product-card__media">
+              <span class="product-card__badge" aria-hidden="true"></span>
+              <img src="images/shop-2.png" alt="Конструктор для робототехніки, модель #02LG9" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Конструктор для роботів</h3>
+                <p class="product-card__code">Модель: #02LG9</p>
+              </div>
+              <div class="product-card__meta">
+                <span class="product-card__price">$ 540</span>
+                <div class="product-card__rating" aria-label="Рейтинг: 4 з 5">
+                  <span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star">★</span>
+                </div>
+                <button type="button" class="product-card__add" data-add-to-cart="Конструктор для роботів (#02LG9)">У кошик</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Сторінка 3 -->
+          <article class="product-card is-hidden" data-page="3" data-title="спортивний тестовий робот #03SR7 sports" role="listitem">
+            <div class="product-card__media">
+              <span class="product-card__badge" aria-hidden="true"></span>
+              <img src="images/product-1.png" alt="Спортивний тестовий робот, модель #03SR7" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Спортивний робот</h3>
+                <p class="product-card__code">Модель: #03SR7</p>
+              </div>
+              <div class="product-card__meta">
+                <span class="product-card__price">$ 620</span>
+                <div class="product-card__rating" aria-label="Рейтинг: 4.5 з 5">
+                  <span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-half">★</span>
+                </div>
+                <button type="button" class="product-card__add" data-add-to-cart="Спортивний робот (#03SR7)">У кошик</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card is-hidden" data-page="3" data-title="навчальний дитячий робот #04ED1 edu" role="listitem">
+            <div class="product-card__media">
+              <span class="product-card__badge" aria-hidden="true"></span>
+              <img src="images/product-2.png" alt="Навчальний дитячий робот, модель #04ED1" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Навчальний робот</h3>
+                <p class="product-card__code">Модель: #04ED1</p>
+              </div>
+              <div class="product-card__meta">
+                <span class="product-card__price">$ 499</span>
+                <div class="product-card__rating" aria-label="Рейтинг: 4 з 5">
+                  <span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star is-filled">★</span><span class="star">★</span>
+                </div>
+                <button type="button" class="product-card__add" data-add-to-cart="Навчальний робот (#04ED1)">У кошик</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state is-hidden" id="emptyCatalogState">За вашим запитом товарів не знайдено.</p>
+
+        <nav class="pagination" id="shopPagination" aria-label="Навігація по сторінках каталогу">
+          <button type="button" class="pagination__btn pagination__arrow" id="prevPageBtn" aria-label="Попередня сторінка">&lsaquo;</button>
+          <div class="pagination__pages" id="paginationPages">
+            <button type="button" class="pagination__btn is-active" data-page-btn="1" aria-current="page">1</button>
+            <button type="button" class="pagination__btn" data-page-btn="2">2</button>
+            <button type="button" class="pagination__btn" data-page-btn="3">3</button>
+          </div>
+          <button type="button" class="pagination__btn pagination__arrow" id="nextPageBtn" aria-label="Наступна сторінка">&rsaquo;</button>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-col__title">Популярні рішення</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html">Спеціальні роботи</a></li>
+            <li><a href="shop.html">Модульні комплекти</a></li>
+            <li><a href="shop.html">Навчальні моделі</a></li>
+            <li><a href="shop.html">Промислові системи</a></li>
+            <li><a href="shop.html">Спортивні платформи</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Корисні посилання</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li><a href="about.html">Про компанію</a></li>
+            <li><a href="shop.html">Каталог продукції</a></li>
+            <li><a href="about.html#team">Команда інженерів</a></li>
+            <li><a href="index.html#contacts">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Напрями розробки</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html">Освітня робототехніка</a></li>
+            <li><a href="shop.html">Складська логістика</a></li>
+            <li><a href="shop.html">Важкі маніпулятори</a></li>
+            <li><a href="shop.html">Індустріальні лінії</a></li>
+            <li><a href="shop.html">Тестові платформи</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Наші сервіси</h3>
+          <div class="footer-services-grid">
+            <img src="images/widget.png" alt="Індустріальний об'єкт" />
+            <img src="images/widget-1.png" alt="Робототехнічний модуль" />
+            <img src="images/widget-2.png" alt="Дрон та сенсорні системи" />
+            <img src="images/widget-3.png" alt="Освітній комплект" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© Robot Factory — Курсовий проєкт</div>
+    </div>
+  </footer>
+
+  <button type="button" class="scroll-top" id="scrollTopBtn" aria-label="Прокрутити вгору">&uarr;</button>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

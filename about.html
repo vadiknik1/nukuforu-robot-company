@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Про нас — РобоФакторі</title>
+  <meta name="description" content="Дізнайтесь більше про компанію РобоФакторі, наші інженерні переваги, команду розробників та можливості приєднатися до нас." />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-top">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.png" alt="Robot Factory" />
+        <span>ROBOT <span class="logo__accent">FACTORY</span></span>
+      </a>
+
+      <div class="header-actions">
+        <a class="cart-status" href="shop.html">0 ТОВАРІВ</a>
+        <form class="search-form" action="shop.html" method="get">
+          <label class="sr-only" for="header-search-about">Пошук продукції</label>
+          <input class="search-form__input" id="header-search-about" type="search" name="q" placeholder="Пошук..." />
+          <button class="search-form__btn" type="submit">Пошук</button>
+        </form>
+      </div>
+    </div>
+
+    <nav class="nav-bar" aria-label="Головна навігація">
+      <div class="container nav-bar__inner">
+        <button class="burger-btn" id="burger-btn" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav-list">
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+        </button>
+
+        <ul class="nav-list" id="nav-list">
+          <li><a class="nav-list__link" href="index.html">Головна</a></li>
+          <li><a class="nav-list__link nav-list__link--active" href="about.html">Про нас</a></li>
+          <li><a class="nav-list__link" href="shop.html">Магазин</a></li>
+          <li><a class="nav-list__link" href="index.html#history">Історія</a></li>
+          <li><a class="nav-list__link" href="#contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="sub-hero">
+      <div class="container sub-hero__inner">
+        <h1 class="sub-hero__title">Про нас</h1>
+        <nav class="breadcrumb" aria-label="Хлібні крихти">
+          <a href="index.html">Головна</a>
+          <span aria-hidden="true">/</span>
+          <span class="breadcrumb__current">Про нас</span>
+        </nav>
+      </div>
+      <div class="hero__strip"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__kicker">Дізнайтесь більше</p>
+          <h2 class="section-header__title">Про нашу команду та підхід</h2>
+        </div>
+
+        <p class="about-intro">Ми створюємо надійні роботизовані системи, модульні приводи та інтелектуальні контролери для автоматизації виробництва, логістики та інженерної освіти. Кожен проєкт будуємо так, щоб його було легко масштабувати й обслуговувати.</p>
+
+        <div class="features-grid">
+          <article class="feature-item">
+            <div class="feature-item__head">
+              <img class="feature-icon" src="images/Vector.png" alt="" aria-hidden="true" />
+              <h3 class="feature-item__title">Зручність збирання</h3>
+            </div>
+            <p class="feature-item__desc">Стандартизовані кріплення та зрозуміла архітектура модулів дозволяють швидко збирати й налаштовувати системи під конкретні задачі.</p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-item__head">
+              <img class="feature-icon" src="images/Vector-1.png" alt="" aria-hidden="true" />
+              <h3 class="feature-item__title">Технічна підтримка</h3>
+            </div>
+            <p class="feature-item__desc">Допомагаємо на кожному етапі: від підбору комплектуючих і прошивки до діагностики та заміни вузлів під час експлуатації.</p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-item__head">
+              <img class="feature-icon" src="images/Vector-2.png" alt="" aria-hidden="true" />
+              <h3 class="feature-item__title">Хмарний моніторинг</h3>
+            </div>
+            <p class="feature-item__desc">Відстежуйте телеметрію, стан приводів, журнал помилок та оновлення ПЗ у реальному часі з будь-якого робочого місця.</p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-item__head">
+              <img class="feature-icon" src="images/Vector-3.png" alt="" aria-hidden="true" />
+              <h3 class="feature-item__title">Гнучка конфігурація</h3>
+            </div>
+            <p class="feature-item__desc">Адаптуємо кінематику, датчики та алгоритми керування під нестандартні габарити, навантаження чи темп роботи лінії.</p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-item__head">
+              <img class="feature-icon" src="images/Vector-4.png" alt="" aria-hidden="true" />
+              <h3 class="feature-item__title">Економічна ефективність</h3>
+            </div>
+            <p class="feature-item__desc">Оптимізована собівартість вузлів і низьке енергоспоживання зменшують операційні витрати та прискорюють окупність проєкту.</p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-item__head">
+              <img class="feature-icon" src="images/Vector-5.png" alt="" aria-hidden="true" />
+              <h3 class="feature-item__title">Індивідуальні рішення</h3>
+            </div>
+            <p class="feature-item__desc">Розробляємо кастомні модулі та інтерфейси під вимоги замовника без зайвого функціоналу, який ускладнює роботу.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="control-banner" aria-label="Інтелектуальне керування">
+      <div class="container control-banner__inner">
+        <div class="control-banner__text">
+          <p class="control-banner__kicker">Інженерний стандарт автоматизації</p>
+          <h2 class="control-banner__title">Перетворіть ваш пристрій на точний пульт керування</h2>
+          <p class="control-banner__desc">Єдина система керування об'єднує ручний режим, сценарії автоматичного виконання та діагностику датчиків. Ви контролюєте траєкторії, швидкість і безпеку роботизованих комплексів в одному зрозумілому інтерфейсі.</p>
+        </div>
+
+        <div class="control-banner__visual">
+          <img src="images/about-control.png" alt="Ілюстрація поєднання людини та роботизованої системи керування" />
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="team">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__kicker">Познайомтеся з нами</p>
+          <h2 class="section-header__title">Команда фахівців</h2>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <img class="team-card__photo" src="images/team.png" alt="Олена Коваленко — керівниця проєктів" />
+            <div class="team-card__body">
+              <h3 class="team-card__name">Олена Коваленко</h3>
+              <p class="team-card__role">Керівниця проєктів</p>
+              <p class="team-card__bio">Координує розробку від технічного завдання до серійного запуску та контролює терміни впровадження.</p>
+              <div class="team-card__socials">
+                <a href="#contacts" aria-label="Facebook"><img src="images/Vector-6.png" alt="" /></a>
+                <a href="#contacts" aria-label="Twitter"><img src="images/Vector-7.png" alt="" /></a>
+                <a href="#contacts" aria-label="LinkedIn"><img src="images/Vector-8.png" alt="" /></a>
+                <a href="#contacts" aria-label="Google Plus"><img src="images/Vector-9.png" alt="" /></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo" src="images/team-1.png" alt="Марія Бондар — інженерка з робототехніки" />
+            <div class="team-card__body">
+              <h3 class="team-card__name">Марія Бондар</h3>
+              <p class="team-card__role">Інженерка робототехніки</p>
+              <p class="team-card__bio">Відповідає за кінематику, сенсорні системи та стабілізацію руху мобільних платформ.</p>
+              <div class="team-card__socials">
+                <a href="#contacts" aria-label="Facebook"><img src="images/Vector-6.png" alt="" /></a>
+                <a href="#contacts" aria-label="Twitter"><img src="images/Vector-7.png" alt="" /></a>
+                <a href="#contacts" aria-label="LinkedIn"><img src="images/Vector-8.png" alt="" /></a>
+                <a href="#contacts" aria-label="Google Plus"><img src="images/Vector-9.png" alt="" /></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo" src="images/team-2.png" alt="Віктор Мельник — головний конструктор" />
+            <div class="team-card__body">
+              <h3 class="team-card__name">Віктор Мельник</h3>
+              <p class="team-card__role">Головний конструктор</p>
+              <p class="team-card__bio">Проєктує силові вузли, механіку та корпусні рішення з акцентом на зносостійкість.</p>
+              <div class="team-card__socials">
+                <a href="#contacts" aria-label="Facebook"><img src="images/Vector-6.png" alt="" /></a>
+                <a href="#contacts" aria-label="Twitter"><img src="images/Vector-7.png" alt="" /></a>
+                <a href="#contacts" aria-label="LinkedIn"><img src="images/Vector-8.png" alt="" /></a>
+                <a href="#contacts" aria-label="Google Plus"><img src="images/Vector-9.png" alt="" /></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo" src="images/team-3.png" alt="Ірина Ткаченко — інженерка тестування" />
+            <div class="team-card__body">
+              <h3 class="team-card__name">Ірина Ткаченко</h3>
+              <p class="team-card__role">Інженерка тестування</p>
+              <p class="team-card__bio">Проводить нагрузочні перевірки, калібрування датчиків і контроль якості перед відвантаженням.</p>
+              <div class="team-card__socials">
+                <a href="#contacts" aria-label="Facebook"><img src="images/Vector-6.png" alt="" /></a>
+                <a href="#contacts" aria-label="Twitter"><img src="images/Vector-7.png" alt="" /></a>
+                <a href="#contacts" aria-label="LinkedIn"><img src="images/Vector-8.png" alt="" /></a>
+                <a href="#contacts" aria-label="Google Plus"><img src="images/Vector-9.png" alt="" /></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo" src="images/team-4.png" alt="Катерина Савченко — інженерка автоматизації" />
+            <div class="team-card__body">
+              <h3 class="team-card__name">Катерина Савченко</h3>
+              <p class="team-card__role">Інженерка автоматизації</p>
+              <p class="team-card__bio">Інтегрує контролери, приводні лінії та інтерфейси керування на об'єктах замовників.</p>
+              <div class="team-card__socials">
+                <a href="#contacts" aria-label="Facebook"><img src="images/Vector-6.png" alt="" /></a>
+                <a href="#contacts" aria-label="Twitter"><img src="images/Vector-7.png" alt="" /></a>
+                <a href="#contacts" aria-label="LinkedIn"><img src="images/Vector-8.png" alt="" /></a>
+                <a href="#contacts" aria-label="Google Plus"><img src="images/Vector-9.png" alt="" /></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo" src="images/team-5.png" alt="Артем Лисенко — розробник ПЗ" />
+            <div class="team-card__body">
+              <h3 class="team-card__name">Артем Лисенко</h3>
+              <p class="team-card__role">Розробник ПЗ</p>
+              <p class="team-card__bio">Створює вбудоване програмне забезпечення, алгоритми навігації та панелі керування.</p>
+              <div class="team-card__socials">
+                <a href="#contacts" aria-label="Facebook"><img src="images/Vector-6.png" alt="" /></a>
+                <a href="#contacts" aria-label="Twitter"><img src="images/Vector-7.png" alt="" /></a>
+                <a href="#contacts" aria-label="LinkedIn"><img src="images/Vector-8.png" alt="" /></a>
+                <a href="#contacts" aria-label="Google Plus"><img src="images/Vector-9.png" alt="" /></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip" aria-label="Кар'єра в компанії">
+      <div class="container cta-strip__inner">
+        <p class="cta-strip__text">Якщо ви любите створювати надійні роботизовані системи або вдосконалювати їхню логіку швидко й точно — будемо раді бачити вас у команді.</p>
+        <button class="cta-strip__btn" type="button" data-open-modal="resume">Надіслати резюме</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-col__title">Популярні рішення</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html">Спеціальні роботи</a></li>
+            <li><a href="shop.html">Модульні комплекти</a></li>
+            <li><a href="shop.html">Навчальні моделі</a></li>
+            <li><a href="shop.html">Промислові системи</a></li>
+            <li><a href="shop.html">Спортивні платформи</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Корисні посилання</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li><a href="about.html">Про компанію</a></li>
+            <li><a href="shop.html">Каталог продукції</a></li>
+            <li><a href="about.html#team">Команда інженерів</a></li>
+            <li><a href="#top" data-open-modal="contact">Замовити консультацію</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Напрями розробки</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html">Освітня робототехніка</a></li>
+            <li><a href="shop.html">Складська логістика</a></li>
+            <li><a href="shop.html">Важкі маніпулятори</a></li>
+            <li><a href="shop.html">Індустріальні лінії</a></li>
+            <li><a href="shop.html">Тестові платформи</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Наші сервіси</h3>
+          <div class="footer-services-grid">
+            <img src="images/widget.png" alt="Індустріальний об'єкт" />
+            <img src="images/widget-1.png" alt="Робототехнічний модуль" />
+            <img src="images/widget-2.png" alt="Дрон та сенсорні системи" />
+            <img src="images/widget-3.png" alt="Освітній комплект" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© Robot Factory — Курсовий проєкт</div>
+    </div>
+  </footer>
+
+  <!-- Модальне вікно з формою -->
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-window">
+      <button class="modal-window__close" id="modal-close" type="button" aria-label="Закрити вікно">&times;</button>
+      <h2 class="modal-window__title" id="modal-title">Зв'язатися з нами</h2>
+      <form id="contact-modal-form" novalidate>
+        <div class="form-field">
+          <label for="modal-name">Ім'я</label>
+          <input id="modal-name" name="name" type="text" required />
+          <span class="form-error" id="error-name"></span>
+        </div>
+        <div class="form-field">
+          <label for="modal-email">Email</label>
+          <input id="modal-email" name="email" type="email" required />
+          <span class="form-error" id="error-email"></span>
+        </div>
+        <div class="form-field">
+          <label for="modal-message">Повідомлення або посилання на резюме</label>
+          <textarea id="modal-message" name="message" rows="4" required></textarea>
+          <span class="form-error" id="error-message"></span>
+        </div>
+        <button class="btn-yellow" type="submit">Надіслати</button>
+        <p class="form-status" id="modal-status"></p>
+      </form>
+    </div>
+  </div>
+
+  <button class="scroll-top-btn" id="scroll-top-btn" type="button" aria-label="Прокрутити вгору">&uarr;</button>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
