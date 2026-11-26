@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const CART_STORAGE_KEY = "rf_cart_count";
 
-  // 1. Підсвічування активного пункту меню
+
   const currentFile = window.location.pathname.split("/").pop() || "index.html";
   const navLinks = document.querySelectorAll(".nav-list__link, .nav-list a");
 
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 2. Мобільне меню (підтримує navToggle/navList, burger-btn/nav-list та burgerBtn/mainNav)
+ 
   const navToggle =
     document.getElementById("navToggle") ||
     document.getElementById("burger-btn") ||
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 3. Плавний скрол до якірних блоків
+
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const targetId = anchor.getAttribute("href");
     if (!targetId || targetId === "#") return;
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 4. Модальне вікно (index.html та about.html)
+ 
   const modalBackdrop = document.getElementById("modal-backdrop");
   const modalClose = document.getElementById("modal-close");
   const modalTitle = document.getElementById("modal-title");
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     openModalTriggers.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         const href = btn.getAttribute("href") || "";
-        // Якщо посилання веде на футер без модалки — відкриваємо модалку тільки коли явно вказано data-open-modal
+        
         if (btn.hasAttribute("data-open-modal")) {
           if (href.startsWith("#")) e.preventDefault();
           openModal(btn.dataset.openModal || "contact");
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 5. Кошик зі збереженням у localStorage
+  
   const cartCountEl = document.getElementById("cartCount");
   const cartStatusLinks = document.querySelectorAll(".cart-status");
   let cartCount = Number(localStorage.getItem(CART_STORAGE_KEY) || "0");
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cartCountEl) {
       cartCountEl.textContent = String(cartCount);
     } else {
-      // Для index.html та about.html, де текст усередині <a class="cart-status">0 ТОВАРІВ</a>
+      
       cartStatusLinks.forEach((link) => {
         if (!link.querySelector("#cartCount")) {
           link.textContent = `${cartCount} ТОВАРІВ`;
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 6. Пагінація, пошук та підтримка ?q= у каталозі (shop.html)
+ 
   const cards = Array.from(document.querySelectorAll(".product-card"));
   const pageButtons = Array.from(document.querySelectorAll("[data-page-btn]"));
   const prevBtn = document.getElementById("prevPageBtn");
@@ -312,7 +312,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCatalog();
   }
 
-  // 7. Кнопка "Вгору" (підтримує scrollTopBtn та scroll-top-btn)
+  
   const scrollTopBtn =
     document.getElementById("scrollTopBtn") ||
     document.getElementById("scroll-top-btn");
