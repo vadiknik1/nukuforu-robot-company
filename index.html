@@ -1,235 +1,320 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>РобоФакторі — розробка роботизованих систем</title>
-  <meta name="description" content="Проєктування, виробництво та впровадження промислових, сервісних і навчальних роботизованих систем." />
-  <link rel="icon" href="images/logo.png" type="image/png" />
+  <title>Robot.io — Robotics & AI Platform</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="container header-top">
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="images/logo.png" alt="Robot Factory" />
-        <span>ROBOT <span class="logo__accent">FACTORY</span></span>
-      </a>
 
-      <div class="header-actions">
-        <a class="cart-status" href="shop.html">0 ТОВАРІВ</a>
-        <form class="search-form" action="shop.html" method="get">
-          <label class="sr-only" for="header-search">Пошук продукції</label>
-          <input class="search-form__input" id="header-search" type="search" name="q" placeholder="Пошук..." />
-          <button class="search-form__btn" type="submit">Пошук</button>
-        </form>
+  <header class="hero">
+    <div class="container hero__inner">
+      <nav class="navbar">
+        <a href="#" class="logo">robot<span>.io</span></a>
+        <ul class="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#shop">Shop</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero__content">
+        <h1>Future of Robotics &amp; Automation</h1>
+        <p>Designing next-generation intelligent machines for space exploration, industrial automation, and everyday life.</p>
+        <div class="hero__actions">
+          <a href="#products" class="btn btn--primary">Explore Products</a>
+          <a href="#history" class="btn btn--outline">Our History</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="products" class="section categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>Core Divisions</h2>
+        <p>Specialized robotic solutions engineered for demanding environments</p>
+      </div>
+
+      <div class="categories__grid">
+        <article class="category-card">
+          <img src="images/category-space.png" alt="Space Robotics" />
+          <div class="category-card__overlay">
+            <span class="category-card__tag">01 / AEROSPACE</span>
+            <h3>Space</h3>
+            <p>Autonomous orbital assistants and extravehicular exploration units.</p>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="images/category-toys.png" alt="Educational & Smart Toys" />
+          <div class="category-card__overlay">
+            <span class="category-card__tag">02 / CONSUMER</span>
+            <h3>Smart Toys</h3>
+            <p>Interactive AI companions designed for STEM learning and entertainment.</p>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="images/category-toys-2.png" alt="Autonomous Action Units" />
+          <div class="category-card__overlay">
+            <span class="category-card__tag">03 / PROTOTYPES</span>
+            <h3>Bionic Series</h3>
+            <p>High-mobility humanoid actuators and modular servo platforms.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="history" class="section section--gray history">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our History &amp; Evolution</h2>
+        <p>From early industrial telemetry prototypes to modern autonomous control systems</p>
+      </div>
+
+      <div class="history__showcase">
+        <img src="images/history-mockup.png" alt="Evolution of Robotics Mockups" class="history__image" />
+      </div>
+
+      <div class="history__timeline">
+        <div class="timeline-item">
+          <span class="timeline-item__year">1998</span>
+          <h4>Industrial Foundations</h4>
+          <p>First automated facility monitoring and heavy-duty mechanical testing rigs.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-item__year">2007</span>
+          <h4>AMES Telemetry Lab</h4>
+          <p>Breakthroughs in structural stress analysis and remote actuator precision.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-item__year">2015</span>
+          <h4>Clean Energy &amp; AI Control</h4>
+          <p>Full integration of neural control networks across industrial power systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners" class="section partners">
+    <div class="container">
+      <div class="section-header">
+        <h2>Trusted Partners</h2>
+        <p>Collaborating with industry leaders in engineering, defense, and technology</p>
+      </div>
+
+      <div class="partners__grid">
+        <div class="partner-card">
+          <img src="images/partner-army.png" alt="Army Partner" />
+        </div>
+        <div class="partner-card">
+          <img src="images/partner-farnico.png" alt="Farnico Partner" />
+        </div>
+        <div class="partner-card">
+          <img src="images/partner-qube.png" alt="Qube Partner" />
+        </div>
+        <div class="partner-card">
+          <img src="images/partner-three.png" alt="Three.org Partner" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ces-banner">
+    <div class="container ces-banner__inner">
+      <div class="ces-banner__text">
+        <span class="ces-banner__badge">AWARD WINNER</span>
+        <h2>CES Control Product of the Year</h2>
+        <p>Recognized globally for breakthroughs in human-machine interface architecture and adaptive neural processing.</p>
+        <a href="#shop" class="btn btn--primary">Discover Technology</a>
+      </div>
+      <div class="ces-banner__visual">
+        <img src="images/ces-banner.png" alt="CES Control Product of the Year" />
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="section section--gray team">
+    <div class="container">
+      <div class="section-header">
+        <h2>Engineering Team</h2>
+        <p>The minds behind our hardware, firmware, and artificial intelligence</p>
+      </div>
+
+      <div class="team__grid">
+        <article class="team-card">
+          <div class="team-card__photo">
+            <img src="images/team-1.png" alt="Marco Rossi" />
+          </div>
+          <div class="team-card__info">
+            <h3>Marco Rossi</h3>
+            <span>Chief Robotics Architect</span>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card__photo">
+            <img src="images/team-2.png" alt="Elena Vance" />
+          </div>
+          <div class="team-card__info">
+            <h3>Elena Vance</h3>
+            <span>Lead Mechanical Engineer</span>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card__photo">
+            <img src="images/team-3.png" alt="Claire Bennett" />
+          </div>
+          <div class="team-card__info">
+            <h3>Claire Bennett</h3>
+            <span>Head of AI &amp; Vision</span>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card__photo">
+            <img src="images/team-4.png" alt="Arthur Pendelton" />
+          </div>
+          <div class="team-card__info">
+            <h3>Arthur Pendelton</h3>
+            <span>Director of R&amp;D</span>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card__photo">
+            <img src="images/team-5.png" alt="Sofia Morales" />
+          </div>
+          <div class="team-card__info">
+            <h3>Sofia Morales</h3>
+            <span>Embedded Systems Lead</span>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card__photo">
+            <img src="images/team-6.png" alt="Hannah Lindqvist" />
+          </div>
+          <div class="team-card__info">
+            <h3>Hannah Lindqvist</h3>
+            <span>Product Strategy Director</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop" class="section shop">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Store</h2>
+        <p>Available kits, collectibles, and modular robotic builds</p>
+      </div>
+
+      <div class="shop__grid">
+        <article class="shop-card">
+          <div class="shop-card__img">
+            <img src="images/product-1.png" alt="Unicorn Collector Figure" />
+          </div>
+          <div class="shop-card__body">
+            <h3>Unicorn Mini-Bot Edition</h3>
+            <p>Limited edition articulated collectible figure with modular joints.</p>
+            <div class="shop-card__footer">
+              <span class="price">$49.00</span>
+              <button class="btn btn--small">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="shop-card">
+          <div class="shop-card__img">
+            <img src="images/product-2.png" alt="Technic Heavy Loader" />
+          </div>
+          <div class="shop-card__body">
+            <h3>Heavy Loader Mechanical Kit</h3>
+            <p>Pneumatic and gear-driven construction vehicle engineering set.</p>
+            <div class="shop-card__footer">
+              <span class="price">$129.00</span>
+              <button class="btn btn--small">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="shop-card">
+          <div class="shop-card__img">
+            <img src="images/product-3.png" alt="Plush Companion" />
+          </div>
+          <div class="shop-card__body">
+            <h3>Smart Plush Companion</h3>
+            <p>Soft-touch interactive companion with embedded voice sensors.</p>
+            <div class="shop-card__footer">
+              <span class="price">$59.00</span>
+              <button class="btn btn--small">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="shop-card">
+          <div class="shop-card__img">
+            <img src="images/product-4.png" alt="Retro Camper Model" />
+          </div>
+          <div class="shop-card__body">
+            <h3>Retro Camper Explorer Set</h3>
+            <p>Hand-crafted vintage miniature vehicle with autonomous crew.</p>
+            <div class="shop-card__footer">
+              <span class="price">$74.00</span>
+              <button class="btn btn--small">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="#" class="logo logo--light">robot<span>.io</span></a>
+        <p>Pioneering intelligent robotics, autonomous aerial drones, and industrial control systems worldwide.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="#products">Core Divisions</a></li>
+          <li><a href="#history">Company History</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#team">Engineering Team</a></li>
+          <li><a href="#shop">Store</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Project Gallery</h4>
+        <div class="footer__widgets">
+          <a href="#"><img src="images/widget-1.png" alt="Gallery Widget 1" /></a>
+          <a href="#"><img src="images/widget-2.png" alt="Gallery Widget 2" /></a>
+          <a href="#"><img src="images/widget-3.png" alt="Gallery Widget 3" /></a>
+          <a href="#"><img src="images/widget-4.png" alt="Gallery Widget 4" /></a>
+        </div>
       </div>
     </div>
 
-    <nav class="nav-bar" aria-label="Головна навігація">
-      <div class="container nav-bar__inner">
-        <button class="burger-btn" id="burger-btn" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav-list">
-          <span class="burger-btn__line"></span>
-          <span class="burger-btn__line"></span>
-          <span class="burger-btn__line"></span>
-        </button>
-
-        <ul class="nav-list" id="nav-list">
-          <li><a class="nav-list__link nav-list__link--active" href="index.html">Головна</a></li>
-          <li><a class="nav-list__link" href="about.html">Про нас</a></li>
-          <li><a class="nav-list__link" href="shop.html">Магазин</a></li>
-          <li><a class="nav-list__link" href="#history">Історія</a></li>
-          <li><a class="nav-list__link" href="#contacts">Контакти</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" aria-label="Головний банер">
-      <div class="hero__banner">
-        <div class="container hero__content">
-          <div class="hero__box">
-            <p class="hero__subtitle-top">Заощаджуйте час та знижуйте</p>
-            <p class="hero__subtitle-sub">витрати на автоматизацію з</p>
-            <h1 class="hero__title">Robot Factory</h1>
-          </div>
-        </div>
-      </div>
-      <div class="hero__strip"></div>
-    </section>
-
-    <section class="page-section">
+    <div class="footer__bottom">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title">Ласкаво просимо до <strong>Robot Factory</strong></h2>
-          <a class="btn-yellow" href="shop.html">Переглянути продукцію</a>
-        </div>
-
-        <div class="categories-grid">
-          <a class="category-card" href="shop.html?q=space">
-            <img class="category-card__img" src="images/product.png" alt="Автономний робот для складних умов експлуатації" />
-            <h3 class="category-card__label">Космічні та спецроботи</h3>
-          </a>
-
-          <a class="category-card" href="shop.html?q=sports">
-            <img class="category-card__img" src="images/product-1.png" alt="Мобільний робот для тренувань і тестування" />
-            <h3 class="category-card__label">Спортивні та тестові</h3>
-          </a>
-
-          <a class="category-card" href="shop.html?q=edu">
-            <img class="category-card__img" src="images/product-2.png" alt="Навчальний робототехнічний комплект для дітей і шкіл" />
-            <h3 class="category-card__label">Навчальні та дитячі</h3>
-          </a>
-        </div>
-
-        <div class="awards-bar">
-          <div class="awards-bar__badge">Чому ми найкращі</div>
-          <p class="awards-bar__subtitle">Інженерна точність та серійне виробництво з 1998 року</p>
-        </div>
-
-        <div class="three-cols">
-          <div class="three-cols__col">
-            <p>Ми проєктуємо роботизовані модулі з урахуванням реальних умов цеху, складу чи лабораторії. Кожен вузол проходить стендові випробування на стабільність роботи під навантаженням і точність позиціонування.</p>
-          </div>
-          <div class="three-cols__col">
-            <p>Наші рішення поєднують надійну механіку, сучасні приводи та гнучке програмне керування. Це дозволяє швидко інтегрувати обладнання в наявні процеси без зупинки ключових операцій підприємства.</p>
-          </div>
-          <div class="three-cols__col">
-            <p>Повний цикл супроводу включає підбір конфігурації, пусконалагодження, навчання персоналу та сервісну підтримку. Замовники отримують прогнозовану окупність і зрозумілу технічну документацію.</p>
-          </div>
-        </div>
+        <p>&copy; 2026 Robot.io Robotics Inc. All rights reserved.</p>
       </div>
-    </section>
-
-    <section class="page-section page-section--dark" id="history">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-header__kicker">З 1990 року</p>
-          <h2 class="section-header__title">Наша історія</h2>
-        </div>
-
-        <p class="history-desc">Починаючи з невеликого конструкторського бюро в дев'яностих, команда пройшла шлях від експериментальних маніпуляторів до розробки комплексних робототехнічних систем для промисловості, освіти та сервісних завдань.</p>
-
-        <div class="history-showcase">
-          <img class="history-showcase__img" src="images/history.png" alt="Історія розвитку та виробничі етапи Robot Factory" />
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section" aria-label="Партнери">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-header__kicker">Наші партнери</p>
-          <h2 class="partners-title">Партнери</h2>
-        </div>
-
-        <div class="partners-grid">
-          <div class="partner-card">
-            <img class="partner-card__img" src="images/partner.png" alt="Логотип партнера Three.org" />
-          </div>
-          <div class="partner-card">
-            <img class="partner-card__img" src="images/partner-1.png" alt="Логотип партнера Qube" />
-          </div>
-          <div class="partner-card">
-            <img class="partner-card__img" src="images/partner-2.png" alt="Логотип партнера Farnico" />
-          </div>
-          <div class="partner-card">
-            <img class="partner-card__img" src="images/partner-3.png" alt="Логотип партнера Army" />
-          </div>
-        </div>
-
-        <div class="dots" aria-hidden="true">
-          <span class="dots__item dots__item--active"></span>
-          <span class="dots__item"></span>
-          <span class="dots__item"></span>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" id="contacts">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3 class="footer-col__title">Популярні рішення</h3>
-          <ul class="footer-links">
-            <li><a href="shop.html">Спеціальні роботи</a></li>
-            <li><a href="shop.html">Модульні комплекти</a></li>
-            <li><a href="shop.html">Навчальні моделі</a></li>
-            <li><a href="shop.html">Промислові системи</a></li>
-            <li><a href="shop.html">Спортивні платформи</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-col__title">Корисні посилання</h3>
-          <ul class="footer-links">
-            <li><a href="index.html">Головна сторінка</a></li>
-            <li><a href="about.html">Про компанію</a></li>
-            <li><a href="shop.html">Каталог продукції</a></li>
-            <li><a href="about.html#team">Команда інженерів</a></li>
-            <li><a href="#top" data-open-modal="contact">Замовити консультацію</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-col__title">Напрями розробки</h3>
-          <ul class="footer-links">
-            <li><a href="shop.html">Освітня робототехніка</a></li>
-            <li><a href="shop.html">Складська логістика</a></li>
-            <li><a href="shop.html">Важкі маніпулятори</a></li>
-            <li><a href="shop.html">Індустріальні лінії</a></li>
-            <li><a href="shop.html">Тестові платформи</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-col__title">Наші сервіси</h3>
-          <div class="footer-services-grid">
-            <img src="images/widget.png" alt="Індустріальний об'єкт" />
-            <img src="images/widget-1.png" alt="Робототехнічний модуль" />
-            <img src="images/widget-2.png" alt="Дрон та сенсорні системи" />
-            <img src="images/widget-3.png" alt="Освітній комплект" />
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">© Robot Factory — Курсовий проєкт</div>
     </div>
   </footer>
 
-
-  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
-    <div class="modal-window">
-      <button class="modal-window__close" id="modal-close" type="button" aria-label="Закрити вікно">&times;</button>
-      <h2 class="modal-window__title" id="modal-title">Зв'язатися з нами</h2>
-      <form id="contact-modal-form" novalidate>
-        <div class="form-field">
-          <label for="modal-name">Ім'я</label>
-          <input id="modal-name" name="name" type="text" required />
-          <span class="form-error" id="error-name"></span>
-        </div>
-        <div class="form-field">
-          <label for="modal-email">Email</label>
-          <input id="modal-email" name="email" type="email" required />
-          <span class="form-error" id="error-email"></span>
-        </div>
-        <div class="form-field">
-          <label for="modal-message">Повідомлення</label>
-          <textarea id="modal-message" name="message" rows="4" required></textarea>
-          <span class="form-error" id="error-message"></span>
-        </div>
-        <button class="btn-yellow" type="submit">Надіслати</button>
-        <p class="form-status" id="modal-status"></p>
-      </form>
-    </div>
-  </div>
-
-  <button class="scroll-top-btn" id="scroll-top-btn" type="button" aria-label="Прокрутити вгору">&uarr;</button>
-  <script src="js/main.js" defer></script>
 </body>
 </html>
