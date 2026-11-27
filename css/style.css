@@ -1,3 +1,6 @@
+/* =========================================
+   RESET & BASE STYLES
+   ========================================= */
 *,
 *::before,
 *::after {
@@ -84,6 +87,9 @@ ul {
   color: var(--text-muted);
 }
 
+/* =========================================
+   BUTTONS
+   ========================================= */
 .btn {
   display: inline-block;
   padding: 13px 28px;
@@ -127,6 +133,9 @@ ul {
   color: var(--text-dark);
 }
 
+/* =========================================
+1. HERO & NAVBAR
+   ========================================= */
 .hero {
   background: linear-gradient(135deg, rgba(17, 20, 26, 0.94), rgba(28, 36, 52, 0.9)),
               url('../images/category-space.png') center/cover no-repeat;
@@ -201,6 +210,9 @@ ul {
   flex-wrap: wrap;
 }
 
+/* =========================================
+2. PRODUCT CATEGORIES (3 CARDS)
+   ========================================= */
 .categories__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -255,6 +267,9 @@ ul {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* =========================================
+3. HISTORY SECTION (SINGLE COMPOSITE IMAGE)
+   ========================================= */
 .history__showcase {
   max-width: 980px;
   margin: 0 auto 44px;
@@ -307,6 +322,9 @@ ul {
   color: var(--text-muted);
 }
 
+/* =========================================
+4. PARTNERS SECTION
+   ========================================= */
 .partners__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -334,6 +352,9 @@ ul {
   width: auto;
 }
 
+/* =========================================
+5. CES BANNER
+   ========================================= */
 .ces-banner {
   background-color: #ffffff;
   border-top: 1px solid var(--border-color);
@@ -372,6 +393,9 @@ ul {
   border-radius: var(--radius);
 }
 
+/* =========================================
+6. TEAM SECTION (6 CARDS)
+   ========================================= */
 .team__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -420,6 +444,9 @@ ul {
   color: var(--text-muted);
 }
 
+/* =========================================
+7. SHOP / STORE SECTION (4 CARDS)
+   ========================================= */
 .shop__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -487,6 +514,9 @@ ul {
   color: var(--text-dark);
 }
 
+/* =========================================
+8. FOOTER & WIDGETS
+   ========================================= */
 .footer {
   background-color: var(--bg-dark);
   color: rgba(255, 255, 255, 0.75);
@@ -550,6 +580,9 @@ ul {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* =========================================
+   RESPONSIVE ADAPTATION
+   ========================================= */
 @media (max-width: 992px) {
   .categories__grid,
   .team__grid {
